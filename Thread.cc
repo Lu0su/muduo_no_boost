@@ -12,7 +12,8 @@ Thread::Thread(Thread::ThreadFunc&& func, const std::string& name)
     , _cntDown(1)
     , _name(name)
 {
-    run();
+    setDefaultName();
+    // run(); 去手动调用run吧
 }
 
 
